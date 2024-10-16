@@ -1,3 +1,3 @@
 # Simple css projects from other resources
 
-  * [see]()
+  * [see](https://xix0one.github.io/simple-css-projects/)
