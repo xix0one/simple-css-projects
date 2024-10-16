@@ -34,10 +34,12 @@ a:link,
 a:visited,
 a:focus {
     background: yellow;
+    transition: background-color 0.4s;
 }
 
 a:hover {
     background: orange;
+
 }
 
 a:active {
