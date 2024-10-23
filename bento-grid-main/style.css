@@ -17,6 +17,7 @@
 
 html {
     max-width: 1440px;
+    min-width: 1090px;
     margin: 0 auto;
     font-family: 'DMSans';
     background-color: rgb(231, 237, 241);
@@ -26,15 +27,10 @@ main {
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 30px;
-}
-
-main {
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin: 3em 1em 3em 1em;
 }
 
 main section {
-    padding: 2em;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -42,11 +38,13 @@ main section {
 h2 {
     line-height: 40px;
     font-size: 2.5em;
+    font-weight: 500;
 }
 
 p {
     font-size: 18px;
 }
+
 
 /* classes -------------------------------------------------------------- */
 
@@ -62,12 +60,20 @@ p {
     gap: 30px;
 }
 
+
 /* create-content-------------------------------- */
 
 
 .create-content {
     background-color: hsl(31, 66%, 93%);
     color: hsl(0, 0%, 7%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 2em 2em;
 }
 
 .create-content span {
@@ -76,11 +82,10 @@ p {
 
 .create-content h2 {
     margin-bottom: 1em;
-    margin-top: 1em;
 }
 
 .create-content img {
-    width: 250px;
+    width: 200px;
 }
 
 
@@ -107,8 +112,7 @@ p {
 
 .purple-content h1 {
     font-size: 4.5em;
-    margin-top: .6em;
-    margin-bottom: .5em;
+    margin: .6em 0em .5em 0em;
 }
 
 .purple-content p {
@@ -119,8 +123,16 @@ p {
 .end-line {
     grid-column: 2 / 4;
     grid-row: 3;
+
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.end-line img {
+    width: 200px;
+}
 
 /* shedule-content-------------------------------- */
 
@@ -129,6 +141,8 @@ p {
     background-color: hsl(254, 88%, 90%);
     grid-column: 3;
     grid-row: 1 / 3;
+
+    padding: 2em;
 }
 
 .shedule-content h2 {
@@ -141,6 +155,10 @@ p {
     line-height: 20px;
 }
 
+.shedule-content img {
+    width: 400px;
+}
+
 
 /* yellow-content-------------------------------- */
 
@@ -149,9 +167,11 @@ p {
     background-color: hsl(39, 100%, 71%);
     padding: 1.1em;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    /* justify-content: center;
+    align-items: center; */
+
+    overflow: hidden;    
 }
 
 .yellow-content h2 {
@@ -160,7 +180,11 @@ p {
 }
 
 .yellow-content img {
-    width: 250px;
+    width: 100%;
+}
+
+.block-two {
+    grid-auto-rows: 200px;
 }
 
 
@@ -169,8 +193,28 @@ p {
 
 .white-content {
     background-color: hsl(0, 0%, 100%);
+    padding: 2em;
 }
 
+.white-content img {
+    width: 350px;
+}
+
+.white-content h2 {
+    margin-top: .5em;
+}
+
+.white-two h2 {
+    font-size: 4em;
+}
+
+.white-two p {
+    margin: 1em;
+}
+
+.white-two img {
+    width: 100%;
+}
 
 /* itallic-------------------------------- */
 
