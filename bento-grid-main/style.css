@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'DMSans-italic';
+    src: url(assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf);
+    src: url(assets/fonts/static/DMSans-MediumItalic.ttf);
+}
+@font-face {
+    font-family: 'DMSans';
+    src: url(assets/fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+/* ------------------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'DMSans';
+    background-color: rgb(231, 237, 241);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 30px;
+}
+
+main {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+main section {
+    padding: 2em;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h2 {
+    line-height: 40px;
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* classes -------------------------------------------------------------- */
+
+
+.left {
+    display: grid;
+    gap: 30px;
+    grid-auto-rows: 550px;
+}
+
+.right {
+    display: grid;
+    gap: 30px;
+}
+
+/* create-content-------------------------------- */
+
+
+.create-content {
+    background-color: hsl(31, 66%, 93%);
+    color: hsl(0, 0%, 7%);
+}
+
+.create-content span {
+    color: hsl(256, 67%, 59%);
+}
+
+.create-content h2 {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.create-content img {
+    width: 250px;
+}
+
+
+/* purple-content-------------------------------- */
+
+
+.purple-content {
+    background-color: hsl(256, 67%, 59%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    line-height: 60px;
+    padding: 2em;
+
+    grid-column: 1 / 3;
+}
+
+.purple-content span {
+    color: hsl(39, 100%, 71%);
+}
+
+.purple-content .itallic {
+    color: hsl(0, 0%, 100%);
+}
+
+.purple-content h1 {
+    font-size: 4.5em;
+    margin-top: .6em;
+    margin-bottom: .5em;
+}
+
+.purple-content p {
+    position: relative;
+    bottom: 30px;
+}
+
+.end-line {
+    grid-column: 2 / 4;
+    grid-row: 3;
+}
+
+
+/* shedule-content-------------------------------- */
+
+
+.shedule-content {
+    background-color: hsl(254, 88%, 90%);
+    grid-column: 3;
+    grid-row: 1 / 3;
+}
+
+.shedule-content h2 {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.shedule-content p {
+    margin-top: 1em;
+    line-height: 20px;
+}
+
+
+/* yellow-content-------------------------------- */
+
+
+.yellow-content {
+    background-color: hsl(39, 100%, 71%);
+    padding: 1.1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yellow-content h2 {
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+.yellow-content img {
+    width: 250px;
+}
+
+
+/* white-content-------------------------------- */
+
+
+.white-content {
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+/* itallic-------------------------------- */
+
+.itallic {
+    font-family: 'DMSans-italic';
+}
+
+/* footer-------------------------------- */
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
