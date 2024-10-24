@@ -15,9 +15,17 @@ blog/
 
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
+.prettierignore
 
 bento-grid-main/README-template.md
 bento-grid-main/README.md
 bento-grid-main/style-guide.md
 bento-grid-main/design
 bento-grid-main/preview.jpg
+
+product-list-with-cart-main/design
+product-list-with-cart-main/data
+product-list-with-cart-main/preview
+product-list-with-cart-main/README
+product-list-with-cart-main/README-template
+product-list-with-cart-main/style-guide

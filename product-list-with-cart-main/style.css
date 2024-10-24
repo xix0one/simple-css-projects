@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'RedHat';
+    src: url(assets/fonts/RedHatText-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'RedHatItallic';
+    src: url(assets/fonts/RedHatText-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'RedHatStaticBold';
+    src: url(assets/fonts/static/RedHatText-Bold.ttf)
+}
+
+@font-face {
+    font-family: 'RedHatStaticRegular';
+    src: url(assets/fonts/static/RedHatText-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'RedHatStaticSemiBold';
+    src: url(assets/fonts/static/RedHatText-SemiBold.ttf);
+}
+
+html {
+    font-family: 'RedHat';
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: hsl(20, 50%, 98%);
+    color: hsl(14, 65%, 9%);
+}
+
+header {
+    margin: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    margin: 1rem;
+}
+
+aside {
+    background-color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    border-radius: 10px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    
+    /* fixed postiion */
+}
+
+
+/* button ---------------------------- */
+
+button {
+    padding: .5rem;
+    background-color: white;
+    border: 1px solid hsl(14, 25%, 72%);
+    text-decoration: none;
+    border-radius: 60px;
+    font-size: 14px;
+    width: 150px;
+    font-family: 'RedHatStaticBold';
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    position: relative;
+    left: 50px;
+    bottom: 20px;
+}
+
+button:hover,
+button:focus {
+    background-color: hsl(14, 25%, 72%);
+}
+
+button:active {
+    border: 1px solid hsl(14, 86%, 42%);
+}
+
+/* ----------------------------------------- */
+
+
+article {
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+}
+
+img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+aside img {
+    align-self: center;
+    width: 100px;
+}
+
+/* text ---------------------------------- */
+
+aside p {
+    font-family: 'RedHatStaticBold';
+    align-self: center;
+    font-size: 13px;
+}
+
+aside h2,
+article p:last-child {
+    color: hsl(14, 86%, 42%);
+    font-family: 'RedHatStaticBold';
+}
+
+article p:last-child {
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 16px;
+    margin: .5rem;
+}
+
+p {
+    color: hsl(7, 20%, 60%);
+    margin: .5rem;
+}
+
+/* ----------------------------------------- */
+
+
+.desserts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.icons {
+    width: 22px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

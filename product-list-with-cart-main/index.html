@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Product list with cart</title>
+</head>
+<body>
+
+  <header>
+    <h1>Caffe</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Desserts</h2>
+      <div class="desserts">
+
+        <article>
+          <picture class="product-image">
+            <source media="(max-width: 400px)" srcset="assets/images/image-waffle-mobile.jpg">
+            <source media="(max-width: 800px)" srcset="assets/images/image-waffle-tablet.jpg">
+            <img src="assets/images/image-waffle-desktop.jpg" alt="waffle">
+          </picture>
+          <button data-name="Waffle with Berries">
+            <img src="assets/images/icon-add-to-cart.svg" class="icons" alt="icon-add-to-cart">
+            Add to Cart
+          </button>
+          <p>Waffle</p>
+          <h3>Waffle with Berries</h3>
+          <p>$6.50</p>
+        </article>
+
+        <article>
+          <picture class="product-image">
+            <source media="(max-width: 400px)" srcset="assets/images/image-creme-brulee-mobile.jpg">
+            <source media="(max-width: 800px)" srcset="assets/images/image-creme-brulee-tablet.jpg">
+            <img src="assets/images/image-creme-brulee-desktop.jpg" alt="creme-brulee">
+          </picture>
+          <button data-name="Crème Brûlée">
+            <img src="assets/images/icon-add-to-cart.svg" class="icons" alt="icon-add-to-cart">
+            Add to Cart
+          </button>
+          <p>Crème Brûlée</p>
+          <h3>Vanilla Bean Crème Brûlée</h3>          
+          <p>$7.00</p>
+        </article>
+
+        <article>
+          <picture class="product-image">
+            <source media="(max-width: 400px)" srcset="assets/images/image-macaron-mobile.jpg">
+            <source media="(max-width: 800px)" srcset="assets/images/image-macaron-tablet.jpg">
+            <img src="assets/images/image-macaron-desktop.jpg" alt="macaron">
+          </picture>
+          <button data-name="Macaron Mix of Five">
+            <img src="assets/images/icon-add-to-cart.svg" class="icons" alt="icon-add-to-cart">
+            Add to Cart
+          </button>
+          <p>Macaron</p>
+          <h3>Macaron Mix of Five</h3>
+          <p>$8.00</p>
+        </article>
+
+        <article>
+          <picture class="product-image">
+            <source media="(max-width: 400px)" srcset="assets/images/image-tiramisu-mobile.jpg">
+            <source media="(max-width: 800px)" srcset="assets/images/image-tiramisu-tablet.jpg">
+            <img src="assets/images/image-tiramisu-desktop.jpg" alt="tiramisu-">
+          </picture>
+          <button data-name="Classic Tiramisu">
+            <img src="assets/images/icon-add-to-cart.svg" class="icons" alt="icon-add-to-cart">
+            Add to Cart
+          </button>
+          <p>Tiramisu</p>
+          <h3>Classic Tiramisu</h3>
+          <p>$5.50</p>
+        </article>
+
+        <article>
+          <picture class="product-image">
+            <source media="(max-width: 400px)" srcset="assets/images/image-baklava-mobile.jpg">
+            <source media="(max-width: 800px)" srcset="assets/images/image-baklava-tablet.jpg">
+            <img src="assets/images/image-baklava-desktop.jpg" alt="baklava">
+          </picture>
+          <button data-name="Pistachio Baklava">
+            <img src="assets/images/icon-add-to-cart.svg" class="icons" alt="icon-add-to-cart">
+            Add to Cart
+          </button>
+          <p>Baklava</p>
+          <h3>Pistachio Baklava</h3>
+          <p>$4.00</p>
+        </article>
+
+        <article>
+          <picture class="product-image">
+            <source media="(max-width: 400px)" srcset="assets/images/image-meringue-mobile.jpg">
+            <source media="(max-width: 800px)" srcset="assets/images/image-meringue-tablet.jpg">
+            <img src="assets/images/image-meringue-desktop.jpg" alt="meringue">
+          </picture>
+          <button data-name="Lemon Meringue Pie">
+            <img src="assets/images/icon-add-to-cart.svg" class="icons" alt="icon-add-to-cart">
+            Add to Cart
+          </button>
+          <p>Pie</p>
+          <h3>Lemon Meringue Pie</h3>
+          <p>$5.00</p>
+        </article>
+
+        <article>
+          <picture class="product-image">
+            <source media="(max-width: 400px)" srcset="assets/images/image-cake-mobile.jpg">
+            <source media="(max-width: 800px)" srcset="assets/images/image-cake-tablet.jpg">
+            <img src="assets/images/image-cake-desktop.jpg" alt="cake">
+          </picture>
+          <button data-name="Red Velvet Cake">
+            <img src="assets/images/icon-add-to-cart.svg" class="icons" alt="icon-add-to-cart">
+            Add to Cart
+          </button>
+          <p>Cake</p>
+          <h3>Red Velvet Cake</h3>
+          <p>$4.50</p>
+        </article>
+
+        <article>
+          <picture class="product-image">
+            <source media="(max-width: 400px)" srcset="assets/images/image-brownie-mobile.jpg">
+            <source media="(max-width: 800px)" srcset="assets/images/image-brownie-tablet.jpg">
+            <img src="assets/images/image-brownie-desktop.jpg" alt="brownie">
+          </picture>
+          <button data-name="Salted Caramel Brownie">
+            <img src="assets/images/icon-add-to-cart.svg" class="icons" alt="icon-add-to-cart">
+            Add to Cart
+          </button>
+          <p>Brownie</p>
+          <h3>Salted Caramel Brownie</h3>
+          <p>$4.50</p>
+        </article>
+
+        <article>
+          <picture class="product-image">
+            <source media="(max-width: 400px)" srcset="assets/images/image-panna-cotta-mobile.jpg">
+            <source media="(max-width: 800px)" srcset="assets/images/image-panna-cotta-tablet.jpg">
+            <img src="assets/images/image-panna-cotta-desktop.jpg" alt="panna-cotta">
+          </picture>
+          <button data-name="Panna Cotta">
+            <img src="assets/images/icon-add-to-cart.svg" class="icons" alt="icon-add-to-cart">
+            Add to Cart
+          </button>
+          <p>Panna Cotta</p>
+          <h3>Vanilla Panna Cotta</h3>
+          <p>$6.50</p>
+        </article>
+      </div>
+    </section>
+
+    <aside>
+      <h2>Your Cart (<span id="cart-quantity">0</span>) </h2>
+      <img id="empty-cart" src="assets/images/illustration-empty-cart.svg" alt="illustration-empty-cart">
+      <p id="cart-message">Your added items will appear here</p>
+    </aside>
+  </main>
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/xix0one">xix0one</a>.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
