@@ -26,9 +26,8 @@
             <source media="(max-width: 800px)" srcset="assets/images/image-waffle-tablet.jpg">
             <img src="assets/images/image-waffle-desktop.jpg" alt="waffle">
           </picture>
-          <button data-name="Waffle with Berries">
-            <img src="assets/images/icon-add-to-cart.svg" class="icons" alt="icon-add-to-cart">
-            Add to Cart
+          <button data-name="Waffle with Berries" class="add-to-cart-button">
+              Add to Cart
           </button>
           <p>Waffle</p>
           <h3>Waffle with Berries</h3>
@@ -41,8 +40,7 @@
             <source media="(max-width: 800px)" srcset="assets/images/image-creme-brulee-tablet.jpg">
             <img src="assets/images/image-creme-brulee-desktop.jpg" alt="creme-brulee">
           </picture>
-          <button data-name="Crème Brûlée">
-            <img src="assets/images/icon-add-to-cart.svg" class="icons" alt="icon-add-to-cart">
+          <button data-name="Vanilla Bean Crème Brûlée">
             Add to Cart
           </button>
           <p>Crème Brûlée</p>
@@ -57,7 +55,6 @@
             <img src="assets/images/image-macaron-desktop.jpg" alt="macaron">
           </picture>
           <button data-name="Macaron Mix of Five">
-            <img src="assets/images/icon-add-to-cart.svg" class="icons" alt="icon-add-to-cart">
             Add to Cart
           </button>
           <p>Macaron</p>
@@ -72,7 +69,6 @@
             <img src="assets/images/image-tiramisu-desktop.jpg" alt="tiramisu-">
           </picture>
           <button data-name="Classic Tiramisu">
-            <img src="assets/images/icon-add-to-cart.svg" class="icons" alt="icon-add-to-cart">
             Add to Cart
           </button>
           <p>Tiramisu</p>
@@ -87,7 +83,6 @@
             <img src="assets/images/image-baklava-desktop.jpg" alt="baklava">
           </picture>
           <button data-name="Pistachio Baklava">
-            <img src="assets/images/icon-add-to-cart.svg" class="icons" alt="icon-add-to-cart">
             Add to Cart
           </button>
           <p>Baklava</p>
@@ -102,7 +97,6 @@
             <img src="assets/images/image-meringue-desktop.jpg" alt="meringue">
           </picture>
           <button data-name="Lemon Meringue Pie">
-            <img src="assets/images/icon-add-to-cart.svg" class="icons" alt="icon-add-to-cart">
             Add to Cart
           </button>
           <p>Pie</p>
@@ -117,7 +111,6 @@
             <img src="assets/images/image-cake-desktop.jpg" alt="cake">
           </picture>
           <button data-name="Red Velvet Cake">
-            <img src="assets/images/icon-add-to-cart.svg" class="icons" alt="icon-add-to-cart">
             Add to Cart
           </button>
           <p>Cake</p>
@@ -132,7 +125,6 @@
             <img src="assets/images/image-brownie-desktop.jpg" alt="brownie">
           </picture>
           <button data-name="Salted Caramel Brownie">
-            <img src="assets/images/icon-add-to-cart.svg" class="icons" alt="icon-add-to-cart">
             Add to Cart
           </button>
           <p>Brownie</p>
@@ -146,8 +138,7 @@
             <source media="(max-width: 800px)" srcset="assets/images/image-panna-cotta-tablet.jpg">
             <img src="assets/images/image-panna-cotta-desktop.jpg" alt="panna-cotta">
           </picture>
-          <button data-name="Panna Cotta">
-            <img src="assets/images/icon-add-to-cart.svg" class="icons" alt="icon-add-to-cart">
+          <button data-name="Vanilla Panna Cotta">
             Add to Cart
           </button>
           <p>Panna Cotta</p>
@@ -158,9 +149,19 @@
     </section>
 
     <aside>
-      <h2>Your Cart (<span id="cart-quantity">0</span>) </h2>
-      <img id="empty-cart" src="assets/images/illustration-empty-cart.svg" alt="illustration-empty-cart">
-      <p id="cart-message">Your added items will appear here</p>
+      <div class="fixed">
+        <h2>Your Cart (<span id="cart-quantity">0</span>)</h2>
+        <img id="empty-cart" src="assets/images/illustration-empty-cart.svg" alt="illustration-empty-cart">
+        <div id="cart-message">
+          <p>Your added items will appear here</p>
+        </div>
+        <div id="total-price" class="total-price" style="display: none;">
+            <p>
+              Order total 
+            </p>
+              <h2 class="sum-total">$<span id="total-amount">0.00</span></h2>
+        </div>
+      </div>
     </aside>
   </main>
   

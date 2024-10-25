@@ -26,6 +26,7 @@
 html {
     font-family: 'RedHat';
     max-width: 1440px;
+    min-width: 1150px;
     margin: 0 auto;
     background-color: hsl(20, 50%, 98%);
     color: hsl(14, 65%, 9%);
@@ -42,50 +43,83 @@ main {
     margin: 1rem;
 }
 
-aside {
+
+/* aside -------------------------------- */
+
+aside .fixed {
     background-color: white;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0 1rem 2rem 1rem;
 
     border-radius: 10px;
-    height: 300px;
-
+    width: 250px;
     display: flex;
     flex-direction: column;
-    
-    /* fixed postiion */
+    position: sticky;
+    top:30px;
 }
 
+aside .cart-item {
+    border-bottom: 1px solid hsl(14, 25%, 72%);
+}
+
+aside h3 {
+    color: hsl(14, 65%, 9%);
+}
+
+.count {
+    color: hsl(14, 86%, 42%);
+    padding-right: 15px;
+}
+
+.normal-price {
+    color: hsl(14, 25%, 72%);
+    padding-right: 15px;
+}
+
+.total-price {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.total-price h2 {
+    color: black
+}
 
 /* button ---------------------------- */
 
 button {
     padding: .5rem;
-    background-color: white;
     border: 1px solid hsl(14, 25%, 72%);
     text-decoration: none;
     border-radius: 60px;
     font-size: 14px;
     width: 150px;
     font-family: 'RedHatStaticBold';
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    padding-left: 2.5rem;
 
     position: relative;
     left: 50px;
     bottom: 20px;
+
+    background: url(assets/images/icon-add-to-cart.svg) no-repeat 20px 7px white;
+    cursor: pointer;
 }
 
 button:hover,
 button:focus {
-    background-color: hsl(14, 25%, 72%);
+    color: hsl(14, 86%, 42%);
+    border-color: hsl(14, 86%, 42%);
 }
 
-button:active {
+button.active {
     border: 1px solid hsl(14, 86%, 42%);
+    color: white;
+    padding-left: .6rem;
+    background: hsl(14, 86%, 42%);
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    justify-content: center;
 }
 
 /* ----------------------------------------- */
@@ -125,13 +159,17 @@ article p:last-child {
     margin-bottom: 1rem;
 }
 
+aside .cart-item p {
+    font-size: 16px;
+}
+
 h3 {
     font-size: 16px;
     margin: .5rem;
 }
 
 p {
-    color: hsl(7, 20%, 60%);
+    color: hsl(12, 20%, 44%);
     margin: .5rem;
 }
 
@@ -148,5 +186,39 @@ p {
     width: 22px;
 }
 
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width: 1030px) {
+    html {
+        min-width: 950px;
+    }
+
+    .desserts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 780px) {
+    html {
+        min-width: 500px;
+    }
+
+    .desserts {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        min-width: 300px;
+    }
+    main {
+        grid-template-columns: 1fr;
+    }
+    aside .fixed {
+        width: 200px;
+    }
+}
