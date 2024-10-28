@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(https://fonts.google.com/specimen/Raleway);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    background: url(images/bg-desktop.png) no-repeat bottom hsl(229, 57%, 11%);
+    height: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+body {
+    width: 900px;
+    height: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main div {
+    background-color: hsl(228, 48%, 35%);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+}
+
+main > div:first-child {
+    border-radius: 10px 80px 10px 10px;
+    flex: 1 100px;
+}
+
+main img:first-child {
+    margin: 1em;
+}
+
+main div:last-child {
+    position: relative;
+}
+
+.numbers {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.numbers span {
+    position: relative;
+}
+
+.numbers span:nth-child(1){
+    bottom: 2px;
+}
+
+.numbers span:nth-child(2) {
+    top: 2px
+}
+
+main div span {
+    font-weight: 700;
+}
+
+main > div:last-child > p:nth-child(2) {
+    background-color: white;
+    color: black;
+    padding: 1em;
+    border-radius: 10px 10px 0 10px;
+
+    position: absolute;
+    bottom: 120px;
+    left: 68%;
+}
+
+.absolute-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.absolute-panel span {
+    display: inline-block;
+}
+
+main > div:last-child {
+    padding: 2em;
+    flex: 3;
+}
+
+main > div:last-child > p:first-child {
+    margin-top: 1em;
+}
+
+.absolute-panel::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    border: solid;
+    border-width: 0 20px 20px 0;
+    bottom: -15px;
+    right: 0;
+    border-color: transparent white;
+}
+
+.scroll-color {
+    height: 15px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    padding: .1rem;
+    margin: 1rem 0 .5rem 0;
+    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.scroll-color div {
+    padding: .3rem;
+    margin: 0;
+    height: 6px;
+    width: 75%;
+    border-radius: 20px;
+    background: rgb(237,118,144);
+    background: linear-gradient(90deg, rgba(237,118,144,1) 0%, rgba(255,175,165,1) 33%, rgba(255,106,138,1) 100%);
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.icons p {
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+}
+
+.point {
+    display: inline-block;
+    background-color: white;
+    height: .8rem;
+    width: .8rem;
+    border-radius: 20px;
+    position: relative;
+    bottom: 4.5px;
+    left: 97%;
+}
+
+.icons p:last-child {
+    margin-right: 6rem;
+}
+
+.bottom-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.absolute-panel > span:last-child {
+    color: hsl(240, 5%, 67%);
+    font-size: 14px;
+}
+
+footer {
+    margin: 1em;
+}
+
+@media screen and (max-width: 420px) {
+    html {
+        background: url(images/bg-mobile.png) no-repeat center hsl(229, 57%, 11%);
+        height: 680px;
+        min-width: 375px;
+    }
+
+    body {
+        width: 375px;
+    }
+
+    body,
+    main {
+        flex-direction: column;
+        align-items: center;   
+    }
+
+    .icons p:last-child {
+        margin-right: 3em;
+    }
+
+    main > div:last-child > p:nth-child(2) {
+        position: absolute;
+        bottom: -30px;
+        left: 75px;
+        border-radius: 10px;
+    }
+
+    .absolute-panel::after {
+        border: 0;
+    }
+
+    .bottom-panel {
+        margin-bottom: 1rem;
+    }
+
+    footer {
+        margin-top: 3em;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(229, 100%, 97%); }
