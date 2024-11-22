@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
+
+h1,
+h2,
+h3 {
+    color: hsl(210, 10%, 33%);
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+button.ios,
+button.mac {
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    padding: 1em 2em 1em 2em;
+    border-radius: 30px;
+    border: none;
+    
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.336);
+    cursor: pointer;
+}
+
+button.ios {
+    background-color: hsl(171, 66%, 44%);
+    border-bottom: 2px solid hsl(171, 66%, 37%);
+    margin-right: .5em;
+}
+
+button.mac {
+    background-color: hsl(233, 100%, 69%);
+    border-bottom: 2px solid hsl(233, 60%, 57%);
+    margin-left: .5em;
+}
+
+button.ios:hover {
+    background-color: hsl(171, 59%, 63%);
+}
+
+button.mac:hover {
+    background-color: hsl(233, 89%, 76%);
+}
+
+button.ios:active {
+    border-bottom: 2px solid hsl(171, 70%, 15%);
+    color: hsl(210, 10%, 33%);
+}
+
+button.mac:active {
+    border-bottom: 2px solid hsl(233, 50%, 27%);
+    color: hsl(210, 10%, 33%);
+}
+
+header,
+main,
+footer {
+    width: 900px;
+    margin: auto;
+}
+
+header {
+    margin: 3em auto 3em auto;
+}
+
+header img {
+    width: 100px;
+}
+
+h1 {
+    margin: 2rem 0 1rem 0;
+}
+
+header p {
+    margin-bottom: 3rem;
+    width: 66%;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+main > section:first-of-type,
+.access-clipboard,
+header,
+.image-devices,
+.clipboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main > section:first-of-type p {
+    width: 66%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.img-computer {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-computer div {
+    margin-top: 2em;
+    margin-left: 5em;
+}
+
+.img-computer img {
+    width: 500px;
+}
+
+.img-computer p {
+    margin-top: .5em;
+    margin-bottom: 2em;
+}
+
+.access-clipboard {
+    margin-bottom: 5em;
+}
+
+.access-clipboard h2 {
+    margin-bottom: 1em;
+    margin-top: 4em;
+}
+
+.access-clipboard p {
+    width: 66%;
+}
+
+.image-devices {
+    margin-bottom: 4em;
+}
+
+.image-devices h2 {
+    margin-top: 2em;
+}
+
+.image-devices p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.image-devices img {
+    width: 700px;
+}
+
+.blacklists {
+    display: flex;
+    flex-direction: row;
+}
+
+.blacklists div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.blacklists div h3 {
+    margin: 1em 0 1em 0;
+}
+
+.blacklists img {
+    width: 40px;
+    align-self: center;
+    margin-top: 1em;
+}
+
+.blacklists img[alt="icon-preview"] {
+    width: 55px;
+}
+
+.blacklists div p {
+    width: 90%;
+    text-align: center;
+}
+
+.logos {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logos img {
+    width: 120px;
+}
+
+.clipboard {
+    margin-bottom: 7em;
+}
+
+.clipboard h2 {
+    margin-bottom: .7em;
+}
+
+.clipboard p {
+    width: 66%;
+    margin-bottom: 3em;
+}
+
+.footer-color {
+    background-color: hsla(0, 0%, 95%, 0.836);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 2em;
+    gap: 20px;
+}
+
+footer img[src="images/logo.svg"] {
+    width: 60px;
+    align-items: center;
+}
+
+footer div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+footer a {
+    color: hsl(210, 10%, 33%);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: hsl(171, 66%, 37%);
+}
+
+.soc-logo {
+    align-items: center;
+    margin-left: 6em;
+}
+
+.soc-logo img:hover {
+    cursor: pointer;
+    filter: hue-rotate(120deg) contrast(100%) invert(100%) saturate(100%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        background-image: url(images/bg-header-mobile.png);
+    }
+
+    h1,
+    h2 {
+        width: 95%;
+    }
+
+    header,
+    main,
+    footer {
+        width: 375px;
+        margin: auto;
+    }
+
+    header {
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+    header p:nth-child(4) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    button.ios,
+    button.mac {
+        width: 93% !important;
+        margin: auto;
+    }
+
+    button.mac {
+        margin-top: 1em;
+    }
+    
+    p {
+        line-height: 20px;
+        width: 93% !important;
+    }
+
+    .img-computer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-computer img {
+        width: 300px;
+    }
+
+    .img-computer div {
+        margin: 1em;
+        text-align: center;
+    }
+
+    .access-clipboard h2 {
+        margin-top: 2rem;
+    }
+
+    .image-devices img {
+        width: 350px;
+    }
+
+    .blacklists {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blacklists div p {
+        margin-bottom: 2rem;
+    }
+
+    .logos {
+        flex-direction: column;
+        margin: 3rem 0 3rem 0;
+    }
+
+    .logos img {
+        margin: 2em;
+    }
+
+    footer {
+        padding: 1rem 0 1rem 0;
+    }
+
+    footer,
+    footer div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .soc-logo {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        margin-top: 1em;
+    }
+
+}
