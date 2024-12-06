@@ -1,0 +1,320 @@
+* {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+}
+
+main {
+    width: 1200px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1 {
+    color: hsl(271, 36%, 24%);
+    font-size: 52px;
+    font-weight: 600;
+}
+
+main section:last-child p {
+    width: 55%;
+    color: hsl(270, 7%, 64%);
+}
+
+body {
+    background-color: hsl(270, 20%, 96%); 
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    width: 400px;
+    height: 650px;
+    background: linear-gradient(hsl(264, 100%, 61%), hsl(293, 100%, 63%)); 
+    background-repeat: no-repeat;
+    z-index: -1;
+    border-radius: 0 0 300px 300px;
+    left: -100px;
+}
+
+.backgroundTwo {
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    background: linear-gradient(hsl(280, 55%, 96%), hsl(280, 55%, 96%)); 
+    background-repeat: no-repeat;
+    z-index: -1;
+    border-radius: 300px 300px 0 0;
+    right: -100px;
+    bottom: 0;
+}
+
+.telephone {
+    background-color: hsl(270, 20%, 96%);
+    border: 10px solid hsl(0, 0%, 100%);
+    border-radius: 50px;
+
+    width: 600px;
+    height: 650px;
+
+    margin-right: 4em;
+    margin-bottom: 2em;
+    margin-left: 5em;
+    margin-top: 5em;
+}
+
+.telephone section:first-child {
+    background-image: linear-gradient(
+        to right,
+        hsl(264, 100%, 61%),
+        hsl(293, 100%, 63%)
+    );
+    border-radius: 38px 38px 10px 10px;
+    padding: 0 0 0 0;
+}
+
+.telephone h2 {
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.telephone section p {
+    color: hsl(276, 100%, 81%);
+    margin: 0;
+    font-size: 12px;
+}
+
+.telephone img {
+    width: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 30px;
+    float: left;
+    margin: 0 1em 0 2em;
+}
+
+.telephone div {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    display: block;
+    width: 145px;
+    height: 20px;
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+    left: 62px;
+    border-radius: 0 0 16px 16px;
+    margin-bottom: 1em;
+}
+
+.telephone div p {
+    font-size: 12px;
+}
+
+.telephone div p:first-child,
+.telephone div p:nth-child(2),
+.telephone div p:nth-child(6) {
+    color: hsl(276, 55%, 52%);
+    background-color: hsl(260, 60%, 93%);
+    font-weight: 500;
+    width: 180px;
+    padding: 1em;
+    margin: 0 0 1em 1em;
+    border-radius: 10px 10px 10px 5px;
+}
+
+.telephone div p:first-child {
+    margin-top: 1em;
+}
+
+.telephone div p:nth-child(4),
+.telephone div p:nth-child(5) {
+    color: black;
+    background-color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    padding: 1em;
+    border-radius: 10px 10px 5px 10px;
+
+    align-self: flex-end;
+    margin: 0 1em 1em 0;
+
+    box-shadow: 1px 1px 10px hsl(270, 20%, 96%);
+}
+
+.telephone div p:nth-child(4) {
+    width: 180px;
+}
+
+.pict {
+    display: flex;
+    flex-direction: row !important;
+
+    align-self: flex-end;
+}
+
+.pict img {
+    margin: 0 .5em .5em 0;
+    border-radius: 10px;
+    width: 50px;
+}
+
+.pict img:nth-child(3) {
+    margin-right: 1rem;
+}
+
+.telephone div div:nth-child(7),
+.telephone div div:nth-child(8) {
+    background-image: linear-gradient(
+        to right,
+        hsl(293, 100%, 63%),
+        hsl(264, 100%, 61%)
+    );
+    margin: 0 0 1em 1em;
+    padding: 5px;
+    width: 200px;
+    border-radius: 10px 10px 10px 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+}
+
+label {
+    font-size: 12px;
+    color: hsl(0, 0%, 100%);
+}
+
+.cost {
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    margin: 0 .5em 0 auto;
+}
+
+input[type="radio"] {
+    appearance: none;
+
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  
+    border: 1px solid hsl(276, 100%, 81%);
+    margin-right: 1em;
+  
+    position: relative;
+    bottom: 2px;
+
+    cursor: pointer;
+}
+
+input:checked {
+    background-color: hsl(194, 81%, 35%);
+}
+
+.messageWindow {
+    margin: 0 1em 0 1em;
+}
+
+.messageWindow div {
+    border-radius: 20px;
+    height: 35px;
+    margin: 0 .6em 0 .6em;
+    border: none;
+    box-shadow: 1px 1px 10px hsl(270, 20%, 96%);
+    background-color: hsl(0, 0%, 100%);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button {
+    display: inline;
+    background-color: hsl(271, 36%, 24%);
+    width: 25px;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: .4em;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+
+.messageWindow span {
+    margin-left: 2em;
+    font-size: 12px;
+    color: hsl(270, 7%, 64%);
+}
+
+.messageWindow .arrowButton {
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.dots {
+    color: hsl(0, 0%, 100%);
+    font-weight: 800;
+    font-size: 18px;
+    position: relative;
+    left: 260px;
+    bottom: 25px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 400px) {
+    body {
+        width: 390px;
+    }
+
+    main {
+        width: 390px;
+        flex-direction: column;
+        margin: 2em auto auto auto;
+    }
+
+    .telephone {
+        width: 300px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    main section:last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .box {
+        left: 75px;
+    }
+
+    .background {
+        top: -100px;
+        width: 300px;
+    }
+
+    .backgroundTwo {
+        width: 200px;
+        height: 500px;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+
