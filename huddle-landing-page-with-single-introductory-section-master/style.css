@@ -1,0 +1,166 @@
+html {
+    background: url("images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+}
+
+main {
+    width: 1200px;
+    margin: auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+}
+
+main p,
+main button {
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+img[alt="logo"] {
+    margin: 3em 0 3em 0;
+    width: 200px;
+}
+
+main img[alt="illustration"] {
+    width: 600px;
+    margin-right: 3em;
+    margin-bottom: 3em;
+}
+
+main button {
+    border-radius: 60px;
+    height: 50px;
+    width: 140px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 6px black;
+
+    color: hsl(257, 40%, 49%);
+    font-size: 15px;
+}
+
+main button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+footer {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    align-self: center;
+    position: fixed;
+}
+
+footer div {
+    margin-left: auto;
+}
+
+footer button {
+    background-color: hsl(257, 40%, 49%);
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+    font-family: "Open Sans", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    
+    margin-left: .5em;
+}
+
+footer button:hover {
+    border: 1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+.attribution { font-size: 11px; }
+.attribution a { color: hsl(228, 48%, 10%); }
+
+@media screen and (max-width: 400px) {
+    html {
+        background: url("images/bg-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: hsl(257, 40%, 49%);
+    }
+
+    main {
+        width: 400px;
+        margin: auto;
+    }
+
+    img[alt="logo"] {
+        width: 150px;
+        margin-left: 3em;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    main img[alt="illustration"] {
+        width: 300px;
+        margin: auto;
+    }
+
+    footer {
+        width: 400px;
+        flex-direction: column;
+    }
+
+    footer p {
+        position: relative;
+        display: block;
+        width: 300px;
+    }
+
+    footer div {
+        margin: auto;
+    }
+
+    .main div {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div h1, 
+    p {
+        text-align: center;
+        width: 300px;
+    }
+
+    main button {
+        width: 200px;
+        margin-bottom: 3em;
+    }
+
+    footer button {
+        margin-bottom: 3em;
+    }
+}
