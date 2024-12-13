@@ -1,0 +1,316 @@
+h1,
+h2,
+button {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: hsl(192, 100%, 9%);
+}
+
+p {
+    font-size: 14px;
+    font-family: "Poppins", serif;
+    color: hsl(192, 100%, 9%);
+    font-weight: 500;
+}
+
+body {
+    margin: auto;
+}
+
+/* header ---------------------------------------- */
+
+header {
+    background: url(images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(193, 100%, 96%);
+
+    margin-bottom: 4em;
+}
+
+header > div {
+    width: 1100px;
+    margin: auto;
+}
+
+/* logo button */
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    margin-top: 6em;
+    width: 200px;
+}
+
+header button:nth-child(2) {
+    margin-top: 6em; 
+}
+
+.headerMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerMain img {
+    width: 600px;
+    margin-left: 2em;
+    margin-bottom: 3em;
+}
+
+.logo button,
+.headerMain button,
+.buildCommunity button {
+    background-color: white;
+    border: none;
+    box-shadow: 1px 1px 5px hsl(208, 11%, 55%);
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border-radius: 40px;
+    margin-bottom: 3em;
+    border: none;
+    font-weight: 700;
+}
+
+.headerMain button,
+.buildCommunity button {
+    width: 230px;
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    margin-top: 1em;
+}
+
+.logo button:hover {
+    color: hsl(208, 11%, 55%);
+}
+
+.headerMain button:hover,
+.buildCommunity button:hover {
+    background-color: hsl(322, 89%, 81%);
+}
+
+/* ------------------------------------------------ */
+
+
+/* section ---------------------------------------- */
+
+section {
+    width: 1050px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px hsla(209, 11%, 55%, 0.274);
+    padding: 2em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+section p {
+    color: hsl(208, 11%, 55%);
+}
+
+section img {
+    width: 400px;
+}
+
+section div {
+    width: 400px;
+}
+
+.buildCommunity {
+    width: 650px;
+    flex-direction: column;
+    font-size: 18px;
+    padding: 1rem;
+    background-color: white;
+
+    position: relative;
+    top: 100px;
+}
+
+.buildCommunity button {
+    margin-bottom: 2rem;
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 600;
+    height: 60px;
+    width: 280px;
+}
+
+/* ------------------------------------------------ */
+
+
+/* footer ----------------------------------------- */
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    padding-top: 10em;
+    padding-bottom: 3em;
+}
+
+footer p {
+    margin-bottom: 0;
+    color: white;
+    font-weight: 400;
+}
+
+.footerWidth {
+    width: 1050px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 60px;
+}
+
+footer img[src^="images/icon"] {
+    position: relative;
+    top: 3px;
+    margin-right: 1em;
+}
+
+.grid a {
+    color: white;
+    text-decoration: none;
+}
+
+.grid a:hover {
+    text-decoration: underline white;
+}
+
+.footerWidth img[src="images/logo.svg"] {
+    filter: brightness(0%) invert(100%);
+}
+
+footer button {
+    background-color: hsl(192, 100%, 9%);
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-weight: 600;
+    color: white;
+    margin-left: .5em;
+}
+
+footer button:hover {
+    border: 1px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+}
+
+.copy {
+    grid-column: 3 / 5;
+
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* ------------------------------------------------ */
+
+@media screen and (max-width: 400px) {
+    body {
+        width: 400px;
+    }
+
+    header {
+        background: url(images/bg-hero-mobile.svg);
+        background-repeat: no-repeat;
+        background-color: hsl(193, 100%, 96%);
+    
+        margin-bottom: 4em;
+        text-align: center;
+    }
+
+    header > div {
+        width: 380px;
+        margin: auto;
+    }
+
+    .headerMain {
+        flex-direction: column;
+    }
+
+    .headerMain img {
+        width: 300px;
+    }
+
+    section {
+        flex-direction: column;
+        width: 300px;
+    }
+
+    section:nth-child(1) div,
+    section:nth-child(3) div {
+        order: 1;
+    }
+
+    section img {
+        width: 200px;
+    }
+
+    section div {
+        width: 300px;
+        text-align: center;
+    }
+
+    .buildCommunity {
+        width: 300px;
+        padding: 0;
+    }
+
+    .buildCommunity h2 {
+        font-size: 18px;
+        margin-bottom: 2rem;
+    }
+
+    .buildCommunity {
+        width: 350px;
+    }
+
+    .footerWidth {
+        width: 400px;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 1em;
+    }
+
+    .footerWidth img[src="images/logo.svg"] {
+        margin-left: 1em;
+    }
+
+    .grid div:nth-child(4),
+    .attribution,
+    .copy {
+        text-align: center;
+    }
+
+    .grid div:nth-child(4) {
+        margin-top: 1em;
+    }
+
+    .logo img {
+        margin-top: 2.5rem;
+        width: 150px;
+    }
+
+    header button:nth-child(2) {
+        width: 140px;
+    }
+}
