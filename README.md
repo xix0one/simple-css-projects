@@ -1,3 +1,3 @@
 # Simple web projects from other resources
 
-  * [see](https://xix0one.github.io/simple-web-projects/)
+  * [see](https://xix0one.github.io/simple-css-projects/)
